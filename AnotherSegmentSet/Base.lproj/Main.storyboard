@@ -24,6 +24,7 @@
                                     <segment title="Black"/>
                                     <segment title="Red"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="segmentControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="m3H-WR-j8Y"/>
                                 </connections>

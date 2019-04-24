@@ -32,6 +32,19 @@ class ViewController: UIViewController {
         updateView()
     }
     
+    fileprivate func changeSegementTextColor() {
+        //Change color of text in seegment control
+        segmentControlOutlet.setTitleTextAttributes([
+            
+            NSAttributedString.Key.foregroundColor: UIColor.black
+            ], for: .normal)
+        
+        segmentControlOutlet.setTitleTextAttributes([
+            
+            NSAttributedString.Key.foregroundColor: UIColor.red
+            ], for: .selected)
+    }
+    
     private func setupSegmentedControl() {
         // Configure Segmented Control
         segmentControlOutlet.removeAllSegments()
@@ -41,6 +54,8 @@ class ViewController: UIViewController {
         
         // Select First Segment
         segmentControlOutlet.selectedSegmentIndex = 0
+        
+        changeSegementTextColor()
     }
     
     @objc func selectionDidChange(){
